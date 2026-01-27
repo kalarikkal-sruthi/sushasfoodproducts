@@ -43,7 +43,7 @@ const Header = () => {
                 alt="susha's food products"
                 width={100}
                 height={100}
-                className="h-18 w-18 md:h-28 md:w-28 object-contain"
+                className="h-14 w-14 md:h-28 md:w-28 object-contain"
                 priority
               />
             </Link>

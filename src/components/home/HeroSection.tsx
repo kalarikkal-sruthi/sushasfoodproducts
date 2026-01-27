@@ -69,7 +69,7 @@ const HeroBanner = () => {
   return (
     <section className="relative w-full overflow-hidden">
       {/* Full Width Banner Container - Fixed height */}
-      <div className="relative w-full h-[200px] md:h-[500px] lg:h-[600px] xl:h-[700px]">
+      <div className="relative w-full h-[230px] md:h-[500px] lg:h-[600px] xl:h-[700px]">
         {slides.map((slide, index) => (
           <div
             key={slide.id}
