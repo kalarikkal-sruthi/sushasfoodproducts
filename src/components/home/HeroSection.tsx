@@ -8,44 +8,44 @@ import Link from "next/link";
 const slides = [
   {
     id: 1,
-    title: "Essential ",
-    description: "Discover premium quality products for your daily needs",
-    cta: "Shop Now",
+    title: "Finest Natural Oils For Cooking & Wellness ",
+    description: "Pure. Wholsome. Essentil",
+    cta: "Shop Oils",
     link: "/products?collection=essential",
-    image: "/assets/3.png",
+    image: "/assets/1.png",
   },
-  {
-    id: 2,
-    title: "Rasoi Manthra",
-    description: "Authentic spices for your kitchen magic",
-    cta: "Explore Range",
-    link: "/products?brand=rasoi-manthra",
-    image: "/assets/b2.png",
-  },
-  {
-    id: 3,
-    title: "Savero",
-    description: "Fresh ingredients for healthy living",
-    cta: "Discover",
-    link: "/products?brand=savero",
-    image: "/assets/b1.png",
-  },
-  {
-    id: 4,
-    title: "Inder Spices",
-    description: "Traditional flavors for modern kitchens",
-    cta: "Shop Now",
-    link: "/products?brand=inder-spices",
-  image: "/assets/b1.png",
-  },
-  {
-    id: 5,
-    title: "Nyraa",
-    description: "Premium quality for discerning tastes",
-    cta: "Explore",
-    link: "/products?brand=nyraa",
-    image: "/assets/b1.png",
-  },
+  // {
+  //   id: 2,
+  //   title: "Rasoi Manthra",
+  //   description: "Authentic spices for your kitchen magic",
+  //   cta: "Explore Range",
+  //   link: "/products?brand=rasoi-manthra",
+  //   image: "/assets/b2.png",
+  // },
+  // {
+  //   id: 3,
+  //   title: "Savero",
+  //   description: "Fresh ingredients for healthy living",
+  //   cta: "Discover",
+  //   link: "/products?brand=savero",
+  //   image: "/assets/b1.png",
+  // },
+  // {
+  //   id: 4,
+  //   title: "Inder Spices",
+  //   description: "Traditional flavors for modern kitchens",
+  //   cta: "Shop Now",
+  //   link: "/products?brand=inder-spices",
+  // image: "/assets/b1.png",
+  // },
+  // {
+  //   id: 5,
+  //   title: "Nyraa",
+  //   description: "Premium quality for discerning tastes",
+  //   cta: "Explore",
+  //   link: "/products?brand=nyraa",
+  //   image: "/assets/b1.png",
+  // },
 ];
 
 const HeroBanner = () => {
@@ -85,7 +85,7 @@ const HeroBanner = () => {
                 src={slide.image}
                 alt={slide.title}
                 fill
-                className="object-contain"
+                className="object-cover"
                 priority={index === 0}
                 sizes="100vw"
                 quality={90}
@@ -98,16 +98,16 @@ const HeroBanner = () => {
             <div className="absolute inset-0 flex items-end pb-8 md:pb-12 lg:pb-16 justify-center">
               <div className="container mx-auto px-4">
                 <div className="max-w-3xl mx-auto md:ml-20 mb-8 md:mb-12 lg:mb-16">
-                  <h1 className="font-playfair text-3xl md:text-4xl lg:text-5xl xl:text-[80px] text-white mb-4 leading-tight">
+                  <h1 className="font-playfair text-3xl md:text-4xl lg:text-5xl xl:text-[60px] text-[#000] mb-4 leading-tight">
                     {slide.title}
                   </h1>
                   <p className="text-base md:text-lg lg:text-xl text-white/90 mb-6 md:mb-8 max-w-2xl">
                     {slide.description}
                   </p>
                   <Link href={slide.link} className="inline-flex items-center">
-                    <button className="group inline-flex items-center justify-center gap-3 px-3 py-1 md:px-6 md:py-3 bg-[#214687] hover:bg-white text-white hover:text-black font-semibold border-1 border-[#214687] transition-all duration-300">
+                    <button className="group inline-flex items-center justify-center gap-3 px-3 py-1 md:px-6 md:py-3 bg-[#5db046] hover:bg-white text-white hover:text-black font-semibold border-1 border-[#5db046] transition-all duration-300">
                       <span className="text-[12px] md:text-[14px] tracking-wide font-montserrat">
-                       Learn More
+                       {slide.cta}
                       </span>
                       <svg
                         className="h-3 w-3 md:h-5 md:w-5 transition-all duration-300 group-hover:translate-x-1"
