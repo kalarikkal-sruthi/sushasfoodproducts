@@ -69,7 +69,7 @@ const HeroBanner = () => {
   return (
     <section className="relative w-full overflow-hidden">
       {/* Full Width Banner Container - Fixed height */}
-      <div className="relative w-full h-[300px] md:h-[500px] lg:h-[600px] xl:h-[700px]">
+      <div className="relative w-full h-[200px] md:h-[500px] lg:h-[600px] xl:h-[700px]">
         {slides.map((slide, index) => (
           <div
             key={slide.id}
@@ -97,11 +97,11 @@ const HeroBanner = () => {
             {/* Content overlay - positioned above image */}
             <div className="absolute inset-0 flex items-end pb-8 md:pb-12 lg:pb-16 justify-center">
               <div className="container mx-auto px-4">
-                <div className="max-w-3xl mx-auto md:ml-20 mb-8 md:mb-12 lg:mb-16">
-                  <h1 className="font-playfair text-3xl md:text-4xl lg:text-5xl xl:text-[60px] text-[#000] mb-4 leading-tight">
+                <div className="max-w-3xl mx-auto md:ml-20 mb-0 md:mb-12 lg:mb-16">
+                  <h1 className="font-playfair mb-1 md:mb-6 text-2xl md:text-4xl lg:text-5xl xl:text-[60px] text-[#000]  leading-tight">
                     {slide.title}
                   </h1>
-                  <p className="text-base md:text-lg lg:text-xl text-white/90 mb-6 md:mb-8 max-w-2xl">
+                  <p className="font-figtree  tracking-widest text-base md:text-lg lg:text-xl text-white/90 mb-1 md:mb-6 max-w-2xl">
                     {slide.description}
                   </p>
                   <Link href={slide.link} className="inline-flex items-center">
@@ -164,7 +164,7 @@ const HeroBanner = () => {
       </div>
 
       {/* Optional: Slide counter */}
-      <div className="absolute top-4 md:top-6 right-4 md:right-6 bg-[#214687] text-white px-3 py-1 rounded-full text-sm font-medium z-10">
+      <div className="absolute top-4 md:top-6 right-4 md:right-6 bg-[#5db046] text-white px-2 md:px-2 py-1 rounded-full text-[10px] font-medium z-10">
         {currentSlide + 1} / {slides.length}
       </div>
     </section>

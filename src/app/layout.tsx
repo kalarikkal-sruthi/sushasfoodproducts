@@ -1,6 +1,23 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display, Montserrat } from 'next/font/google';
+import { Manrope, Figtree, IBM_Plex_Serif } from 'next/font/google'
 import "./globals.css";
+const manrope = Manrope({
+  subsets: ['latin'],
+  variable: '--font-manrope',
+})
+
+const figtree = Figtree({
+  subsets: ['latin'],
+  variable: '--font-figtree',
+})
+
+const plexSerif = IBM_Plex_Serif({
+  weight: ['400', '600'],
+  subsets: ['latin'],
+  variable: '--font-plex-serif',
+})
+
 
 const inter = Inter({
   subsets: ['latin'],
@@ -33,7 +50,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-       className={`${inter.variable} ${playfair.variable} ${montserrat.variable}`}
+       className={`${inter.variable} ${playfair.variable} ${montserrat.variable} ${manrope.variable} ${figtree.variable} ${plexSerif.variable}`}
       >
         {children}
       </body>
