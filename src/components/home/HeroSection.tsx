@@ -9,7 +9,7 @@ const slides = [
   {
     id: 1,
     title: "Finest Natural Oils For Cooking & Wellness ",
-    description: "Pure. Wholsome. Essentil",
+    description: "Pure. Wholsome. Essential",
     cta: "Shop Oils",
     link: "/products?collection=essential",
     image: "/assets/1.png",
