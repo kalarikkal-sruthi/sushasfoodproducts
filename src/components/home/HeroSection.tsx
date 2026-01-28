@@ -38,14 +38,14 @@ const slides = [
     link: "/products?brand=inder-spices",
   image: "/assets/44.png",
   },
-  // {
-  //   id: 5,
-  //   title: "Nyraa",
-  //   description: "Premium quality for discerning tastes",
-  //   cta: "Explore",
-  //   link: "/products?brand=nyraa",
-  //   image: "/assets/b1.png",
-  // },
+  {
+    id: 5,
+    title: "Nyraa",
+    description: "Stronger, Shiner, Healthier",
+    cta: "Explore",
+    link: "/products?brand=nyraa",
+    image: "/assets/55.png",
+  },
 ];
 
 const HeroBanner = () => {
@@ -69,7 +69,7 @@ const HeroBanner = () => {
   return (
     <section className="relative w-full overflow-hidden">
       {/* Full Width Banner Container - Fixed height */}
-      <div className="relative w-full h-[280px] md:h-[600px] lg:h-[600px] xl:h-[700px]">
+      <div className="relative w-full h-[250px] md:h-[600px] lg:h-[600px] xl:h-[700px]">
         {slides.map((slide, index) => (
           <div
             key={slide.id}
