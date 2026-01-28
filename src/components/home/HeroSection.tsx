@@ -8,36 +8,36 @@ import Link from "next/link";
 const slides = [
   {
     id: 1,
-    title: "Finest Natural Oils For Cooking & Wellness ",
+    title: "Essential ",
     description: "Pure. Wholsome. Essential",
-    cta: "Shop Oils",
+    cta: "SHOP OILS",
     link: "/products?collection=essential",
-    image: "/assets/1.png",
+    image: "/assets/11.png",
   },
-  // {
-  //   id: 2,
-  //   title: "Rasoi Manthra",
-  //   description: "Authentic spices for your kitchen magic",
-  //   cta: "Explore Range",
-  //   link: "/products?brand=rasoi-manthra",
-  //   image: "/assets/b2.png",
-  // },
-  // {
-  //   id: 3,
-  //   title: "Savero",
-  //   description: "Fresh ingredients for healthy living",
-  //   cta: "Discover",
-  //   link: "/products?brand=savero",
-  //   image: "/assets/b1.png",
-  // },
-  // {
-  //   id: 4,
-  //   title: "Inder Spices",
-  //   description: "Traditional flavors for modern kitchens",
-  //   cta: "Shop Now",
-  //   link: "/products?brand=inder-spices",
-  // image: "/assets/b1.png",
-  // },
+  {
+    id: 2,
+    title: "Rasoi Manthra",
+    description: "Farm Fresh Masalas & Powders",
+    cta: "SHOP NOW",
+    link: "/products?brand=rasoi-manthra",
+    image: "/assets/22.png",
+  },
+  {
+    id: 3,
+    title: "Savero",
+    description: "Authentic & Flavorful, Made with Love",
+    cta: "Explore Flavors",
+    link: "/products?brand=savero",
+    image: "/assets/33.png",
+  },
+  {
+    id: 4,
+    title: "Inder Spices",
+    description: "Pure Flavor, Uncompromised Quality",
+    cta: "SHOP SPICES",
+    link: "/products?brand=inder-spices",
+  image: "/assets/44.png",
+  },
   // {
   //   id: 5,
   //   title: "Nyraa",
@@ -69,7 +69,7 @@ const HeroBanner = () => {
   return (
     <section className="relative w-full overflow-hidden">
       {/* Full Width Banner Container - Fixed height */}
-      <div className="relative w-full h-[230px] md:h-[500px] lg:h-[600px] xl:h-[700px]">
+      <div className="relative w-full h-[250px] md:h-[600px] lg:h-[600px] xl:h-[700px]">
         {slides.map((slide, index) => (
           <div
             key={slide.id}
@@ -98,7 +98,7 @@ const HeroBanner = () => {
             <div className="absolute inset-0 flex items-end pb-8 md:pb-12 lg:pb-16 justify-center">
               <div className="container mx-auto px-4">
                 <div className="max-w-3xl mx-auto md:ml-20 mb-0 md:mb-12 lg:mb-16">
-                  <h1 className="font-playfair mb-1 md:mb-6 text-2xl md:text-4xl lg:text-5xl xl:text-[60px] text-[#000]  leading-tight">
+                  <h1 className="font-playfair font-medium mb-1 md:mb-6 text-2xl md:text-4xl lg:text-5xl xl:text-[60px] text-[#fff]  leading-tight">
                     {slide.title}
                   </h1>
                   <p className="font-figtree  tracking-widest text-base md:text-lg lg:text-xl text-white/90 mb-1 md:mb-6 max-w-2xl">
