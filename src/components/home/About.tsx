@@ -15,44 +15,62 @@ const About = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <section className="w-full py-30 bg-white">
+    <section className="w-full py-20 bg-white">
+      <div className="text-center">
+        <div className="inline-flex items-center gap-2  ">
+          <Sparkles className="h-4 w-4 text-[#5db046]" />
+          <span className="font-playfair text-[40px]  text-[#000]  tracking-wider">
+            Our Story
+          </span>
+          <Sparkles className="h-4 w-4 text-[#5db046]" />
+        </div>
+      </div>
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
+        {/* Section Label */}
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Side - Image with Decorative Elements */}
-          <div className="relative">
-            {/* Main Image Container */}
-            <div className="relative  overflow-hidden ">
-              <div className="relative">
-                <div className="w-64 h-64 md:w-100 md:h-100 mx-auto relative">
-                  <Image
-                    src="/assets/reg.png"
-                    alt="Loved01 Brand - Premium Skincare"
-                    fill
-                    className="object-contain"
-                    sizes="(max-width: 768px) 256px, 320px"
-                  />
-                </div>
-                {/* <div className="absolute bottom-0 left-0 right-0 h-2 bg-gradient-to-r from-[#44aee3de] via-[#2f5898] to-[#95c9ece1]" /> */}
-              </div>
+          <div className="relative w-full h-96 md:h-120">
+           <div className="relative w-full h-full">
+  {/* First Image - Left side */}
+  <div
+    className="absolute top-1/4  w-64 h-64 md:w-80 md:h-80
+        transform -translate-y-1/2 -rotate-0
+        overflow-hidden 
+        border-2 border-white
+        z-10
+        shadow-lg"
+  >
+    <Image
+      src="/assets/reg.png"
+      alt="Loved01 Product 1"
+      fill
+      className="object-cover"
+      sizes="(max-width: 768px) 256px, 320px"
+    />
+  </div>
 
-              {/* Bottom Accent */}
-            </div>
-
-            {/* Decorative Background Element */}
-            {/* <div className="absolute -z-10 -bottom-6 -left-6 w-3/4 h-3/4 bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl" /> */}
+  {/* Second Image - Right side with gap */}
+  <div
+    className="absolute top-2/4 left-2/4 w-64 h-64 md:w-80 md:h-80
+        transform -translate-y-1/2 rotate-0
+        overflow-hidden 
+        border-2 border-white
+        z-10
+        shadow-lg"
+  >
+    <Image
+      src="/assets/a2.jpeg"
+      alt="Loved01 Product 2"
+      fill
+      className="object-cover"
+      sizes="(max-width: 768px) 256px, 320px"
+    />
+  </div>
+</div>
           </div>
-
           {/* Right Side - Content */}
           <div className="space-y-8">
-            {/* Section Label */}
-            <div className="inline-flex items-center gap-2  ">
-              <Sparkles className="h-4 w-4 text-[#5db046]" />
-              <span className="font-playfair text-[30px] font-semibold text-[#214687] uppercase tracking-wider">
-                Our Story
-              </span>
-              <Sparkles className="h-4 w-4 text-[#5db046]" />
-            </div>
-
             {/* Description */}
             <div className="space-y-8">
               <p className="font-intertext-[12px] md:text-[14px] text-gray-700 leading-relaxed">
@@ -75,7 +93,7 @@ const About = () => {
 
             {/* CTA Button */}
             <div className="pt-6">
-              <button className="group inline-flex items-center justify-center gap-3 px-4 py-2 bg-black hover:bg-white text-white hover:text-black font-semibold  border-2 border-black transition-all duration-300">
+              <button className="group inline-flex items-center justify-center gap-3 px-4 py-2 bg-[#5db046] hover:bg-white text-white hover:text-black font-semibold  border-2 border-[#5db046] transition-all duration-300">
                 <span className="text-[14px] tracking-wide font-montserrat">
                   LEARN MORE
                 </span>
