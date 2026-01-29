@@ -2,6 +2,7 @@ import Image from "next/image";
 import Header from "@/components/layouts/Header";
 import HeroSection from "@/components/home/HeroSection";
 import About from "@/components/home/About";
+import BestSeller from "@/components/home/BestSeller";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
     
        <HeroSection />
        <About />
+       <BestSeller />
         
       
         {/* <Suspense fallback={<LoadingSpinner />}>
