@@ -104,7 +104,7 @@ const HeroBanner: React.FC = () => {
       </div>
 
       {/* Full Width Banner Container */}
-      <div className="relative w-full h-[250px] md:h-[700px] lg:h-[700px] xl:h-[700px]">
+      <div className="relative w-full h-[230px] md:h-[700px] lg:h-[700px] xl:h-[700px]">
         {slides.map((slide, index) => (
           <div
             key={slide.id}
