@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -5,7 +6,7 @@ import Link from "next/link";
 function About() {
   return (
     <section 
-      className="py-12 md:py-16 lg:py-20 px-4 sm:px-6 lg:px-8"
+      className="py-8 md:py-16 lg:py-20 px-4 sm:px-6 lg:px-8"
       aria-labelledby="about-heading"
     >
       <div className="max-w-7xl mx-auto">
@@ -32,13 +33,13 @@ function About() {
 
           {/* Content Section */}
           <div className="space-y-4 md:space-y-6 order-1 lg:order-2">
-            <span className="inline-block text-green-600 font-bold tracking-widest text-xs md:text-sm uppercase">
+            <span className="inline-block text-green-600 font-bold tracking-widest text-xs md:text-sm uppercase mb-1">
              Our Heritage Story
             </span>
             
             <h1 
               id="about-heading"
-              className="font-playfair text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif text-gray-900 leading-tight"
+              className="font-playfair text-[20px] sm:text-[28px] md:text-[40px] font-serif text-gray-900 leading-tight"
             >
              Preserving Organic Traditions
             </h1>
