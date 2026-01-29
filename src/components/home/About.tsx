@@ -1,17 +1,14 @@
 "use client";
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-
 function About() {
   return (
-    <section 
+    <section
       className="py-8 md:py-16 lg:py-20 px-4 sm:px-6 lg:px-8"
       aria-labelledby="about-heading"
     >
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-2 sm:gap-8 lg:gap-12 items-center">
-          {/* Image Section */}
           <div className="relative order-2 lg:order-1">
             <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden ">
               <Image
@@ -24,46 +21,40 @@ function About() {
                 quality={85}
               />
             </div>
-            {/* Stats Card - Optional */}
-            {/* <div className="absolute -bottom-4 -right-4 bg-green-600 text-white p-4 md:p-6 rounded-2xl hidden md:block shadow-xl">
-              <p className="text-xl md:text-2xl font-bold">10+</p>
-              <p className="text-xs md:text-sm">Years of Purity</p>
-            </div> */}
           </div>
-
-          {/* Content Section */}
           <div className="space-y-4 md:space-y-6 order-1 lg:order-2">
             <span className="inline-block text-green-600 font-bold tracking-widest text-[10px] sm:text-[14px] uppercase mb-1">
-             Our Heritage Story
+              Our Heritage Story
             </span>
-            
-            <h1 
+            <h1
               id="about-heading"
               className="font-playfair text-[24px] sm:text-[28px] md:text-[40px] font-serif text-gray-900 leading-tight mb-2 sm:mb-3 "
             >
-             Preserving Organic Traditions
+              Preserving Organic Traditions
             </h1>
-            
             <div className="space-y-3 md:space-y-4">
               <p className="font-inter text-gray-700 leading-relaxed  text-[12px] sm:text-[14px] ">
-              P T Sushama founded Susha&apos;s Food Products & Prakash Farm to continue the sustainable legacy inspired by her husband Prakash. Our Kerala farm employs regenerative techniques that yield nutrient-dense organic produce while improving soil health and ecosystem diversity. We make wholesome, affordable food accessible to communities, ensuring both people and nature thrive together. Explore our trustworthy farm-to-table process.
-            
-            </p></div>
-
-            {/* CTA Button */}
+                P T Sushama founded Susha&apos;s Food Products & Prakash Farm to
+                continue the sustainable legacy inspired by her husband Prakash.
+                Our Kerala farm employs regenerative techniques that yield
+                nutrient-dense organic produce while improving soil health and
+                ecosystem diversity. We make wholesome, affordable food
+                accessible to communities, ensuring both people and nature
+                thrive together. Explore our trustworthy farm-to-table process.
+              </p>
+            </div>
             <div className="pt-2 md:pt-4">
               <Link
-                href="/about" 
+                href="/about"
                 className="inline-flex items-center group"
                 aria-label="Learn more about Susha's Foods organic journey"
                 prefetch={false}
               >
                 <button
-                   className="group inline-flex items-center justify-center gap-3 px-3 py-1 md:px-6 md:py-3 bg-[#5db046] hover:bg-white text-white hover:text-black font-semibold border-1 border-[#5db046] transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-                     
+                  className="group inline-flex items-center justify-center gap-3 px-3 py-1 md:px-6 md:py-3 bg-[#5db046] hover:bg-white text-white hover:text-black font-semibold border-1 border-[#5db046] transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                   aria-label="Learn more about our production methods"
                 >
-                  <span className="text-[12px] md:text-[14px] tracking-wide  uppercase font-montserrat" >
+                  <span className="text-[12px] md:text-[14px] tracking-wide  uppercase font-montserrat">
                     Learn More
                   </span>
                   <svg
@@ -90,5 +81,4 @@ function About() {
     </section>
   );
 }
-
 export default About;
