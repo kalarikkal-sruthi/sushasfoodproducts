@@ -53,6 +53,8 @@ export default function RootLayout({
        className={`${inter.variable} ${playfair.variable} ${montserrat.variable} ${manrope.variable} ${figtree.variable} ${plexSerif.variable}`}
       >
         {children}
+
+        
       </body>
     </html>
   );
