@@ -38,14 +38,14 @@ function About() {
             
             <h1 
               id="about-heading"
-              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif text-gray-900 leading-tight"
+              className="font-playfair text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif text-gray-900 leading-tight"
             >
              Preserving Organic Traditions
             </h1>
             
             <div className="space-y-3 md:space-y-4">
-              <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-              P T Sushama founded Susha's Food & Prakash Farm to continue the sustainable legacy inspired by her husband Prakash. Our Kerala farm employs regenerative techniques that yield nutrient-dense organic produce while improving soil health and ecosystem diversity. We make wholesome, affordable food accessible to communities, ensuring both people and nature thrive together. Explore our trustworthy farm-to-table process.
+              <p className="font-inter text-gray-700 leading-relaxed text-sm sm:text-base">
+              P T Sushama founded Susha&apos;s Food Products & Prakash Farm to continue the sustainable legacy inspired by her husband Prakash. Our Kerala farm employs regenerative techniques that yield nutrient-dense organic produce while improving soil health and ecosystem diversity. We make wholesome, affordable food accessible to communities, ensuring both people and nature thrive together. Explore our trustworthy farm-to-table process.
             
             </p></div>
 
@@ -58,10 +58,11 @@ function About() {
                 prefetch={false}
               >
                 <button
-                  className="group inline-flex items-center justify-center gap-2 md:gap-3 px-4 py-2 md:px-6 md:py-3 bg-green-600 hover:bg-white text-white hover:text-green-700 font-semibold border-2 border-green-600  transition-all duration-300 ease-in-out  active:scale-95 focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-2"
+                   className="group inline-flex items-center justify-center gap-3 px-3 py-1 md:px-6 md:py-3 bg-[#5db046] hover:bg-white text-white hover:text-black font-semibold border-1 border-[#5db046] transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                     
                   aria-label="Learn more about our production methods"
                 >
-                  <span className="text-[14px] md:text-sm tracking-wide  uppercase">
+                  <span className="text-[12px] md:text-[14px] tracking-wide  uppercase font-montserrat" >
                     Learn More
                   </span>
                   <svg
