@@ -39,7 +39,7 @@ function About() {
             
             <h1 
               id="about-heading"
-              className="font-playfair text-[20px] sm:text-[28px] md:text-[40px] font-serif text-gray-900 leading-tight mb-2 sm:mb-3 "
+              className="font-playfair text-[24px] sm:text-[28px] md:text-[40px] font-serif text-gray-900 leading-tight mb-2 sm:mb-3 "
             >
              Preserving Organic Traditions
             </h1>
