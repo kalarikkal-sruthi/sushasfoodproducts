@@ -10,7 +10,7 @@ function About() {
       aria-labelledby="about-heading"
     >
       <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-2 sm:gap-8 lg:gap-12 items-center">
           {/* Image Section */}
           <div className="relative order-2 lg:order-1">
             <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden ">
@@ -19,7 +19,7 @@ function About() {
                 alt="Susha's Foods organic farm with fresh produce and cold-pressed oil production"
                 fill
                 className="object-cover w-full h-full shadow-lg"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+                sizes="(max-width: 768px) 80vw, (max-width: 1200px) 50vw, 600px"
                 priority
                 quality={85}
               />
@@ -33,19 +33,19 @@ function About() {
 
           {/* Content Section */}
           <div className="space-y-4 md:space-y-6 order-1 lg:order-2">
-            <span className="inline-block text-green-600 font-bold tracking-widest text-xs md:text-sm uppercase mb-1">
+            <span className="inline-block text-green-600 font-bold tracking-widest text-[10px] sm:text-[14px] uppercase mb-1">
              Our Heritage Story
             </span>
             
             <h1 
               id="about-heading"
-              className="font-playfair text-[20px] sm:text-[28px] md:text-[40px] font-serif text-gray-900 leading-tight"
+              className="font-playfair text-[20px] sm:text-[28px] md:text-[40px] font-serif text-gray-900 leading-tight mb-2 sm:mb-3 "
             >
              Preserving Organic Traditions
             </h1>
             
             <div className="space-y-3 md:space-y-4">
-              <p className="font-inter text-gray-700 leading-relaxed text-sm sm:text-base">
+              <p className="font-inter text-gray-700 leading-relaxed  text-[12px] sm:text-[14px] ">
               P T Sushama founded Susha&apos;s Food Products & Prakash Farm to continue the sustainable legacy inspired by her husband Prakash. Our Kerala farm employs regenerative techniques that yield nutrient-dense organic produce while improving soil health and ecosystem diversity. We make wholesome, affordable food accessible to communities, ensuring both people and nature thrive together. Explore our trustworthy farm-to-table process.
             
             </p></div>
