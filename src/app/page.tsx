@@ -4,6 +4,7 @@ import HeroSection from "@/components/home/HeroSection";
 import About from "@/components/home/About";
 import BestSeller from "@/components/home/BestSeller";
 import Essential, { sampleProducts } from "@/components/home/Essential";
+import Essentialslider from "@/components/home/Essentialslider";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <About />
         <BestSeller />
         <Essential products={sampleProducts} />
+        <Essentialslider />
 
         {/* <Suspense fallback={<LoadingSpinner />}>
           <CategoryGrid />

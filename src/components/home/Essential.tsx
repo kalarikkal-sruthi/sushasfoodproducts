@@ -1,7 +1,6 @@
 // components/ProductGrid.tsx
 import React from "react";
 import Image from "next/image";
-
 export interface Product {
   id: number;
   category: string;
@@ -29,7 +28,6 @@ const Essential: React.FC<ProductGridProps> = ({ products }) => {
           for a healthier lifestyle.
         </p>
       </header>
-
       {/* Product Grid */}
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
@@ -58,7 +56,6 @@ const Essential: React.FC<ProductGridProps> = ({ products }) => {
                   </span>
                 </div>
               </div>
-
               {/* Product Content */}
               <div className="p-5 md:p-6">
                 {/* Product Title */}
@@ -68,7 +65,6 @@ const Essential: React.FC<ProductGridProps> = ({ products }) => {
                 >
                   {product.title}
                 </h2>
-
                 {/* Product Description */}
                 <p
                   className="text-gray-700 mb-4 h-12 overflow-hidden"
@@ -76,7 +72,6 @@ const Essential: React.FC<ProductGridProps> = ({ products }) => {
                 >
                   {product.description}
                 </p>
-
                 {/* Price Section */}
                 <div className="flex items-center justify-between mt-4 pt-4 border-t border-gray-100">
                   <div>
@@ -103,7 +98,6 @@ const Essential: React.FC<ProductGridProps> = ({ products }) => {
                       </span>
                     </p>
                   </div>
-
                   {/* Add to Cart Button */}
                   <button
                     className="bg-gradient-to-r from-amber-600 to-amber-700 text-white font-medium py-2 px-5 rounded-xl hover:from-amber-700 hover:to-amber-800 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2"
@@ -113,7 +107,6 @@ const Essential: React.FC<ProductGridProps> = ({ products }) => {
                     <span className="sm:hidden">+ Cart</span>
                   </button>
                 </div>
-
                 {/* SEO Meta (hidden) */}
                 <meta itemProp="brand" content="Organic Premium" />
                 <meta
@@ -125,7 +118,6 @@ const Essential: React.FC<ProductGridProps> = ({ products }) => {
           ))}
         </div>
       </div>
-
       {/* SEO Structured Data JSON-LD */}
       <script
         type="application/ld+json"
@@ -205,5 +197,4 @@ export const sampleProducts: Product[] = [
     altText: "Advanced Multi-Grain Product",
   },
 ];
-
 export default Essential;
