@@ -8,14 +8,14 @@ function About() {
       aria-labelledby="about-heading"
     >
       <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-2 sm:gap-8 lg:gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-0 sm:gap-8 lg:gap-12 items-center">
           <div className="relative order-2 lg:order-1">
             <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden ">
               <Image
                 src="/assets/about.png"
                 alt="Susha's Foods organic farm with fresh produce and cold-pressed oil production"
                 fill
-                className="object-cover w-full h-full shadow-lg"
+                className="object-contain w-full h-full shadow-lg"
                 sizes="(max-width: 768px) 80vw, (max-width: 1200px) 50vw, 600px"
                 priority
                 quality={85}
@@ -28,7 +28,7 @@ function About() {
             </span>
             <h1
               id="about-heading"
-              className="font-playfair text-[20px] sm:text-[28px] md:text-[40px] font-serif text-gray-900 leading-tight mb-2 sm:mb-3 "
+              className="font-playfair text-[24px] sm:text-[28px] md:text-[40px]  text-gray-900 leading-tight mb-2 sm:mb-3 "
             >
               Preserving Organic Traditions
             </h1>
@@ -43,7 +43,7 @@ function About() {
                 thrive together. Explore our trustworthy farm-to-table process.
               </p>
             </div>
-            <div className="pt-2 md:pt-4">
+            <div className="pt-0 md:pt-4">
               <Link
                 href="/about"
                 className="inline-flex items-center group"

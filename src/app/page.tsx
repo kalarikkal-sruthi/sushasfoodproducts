@@ -3,19 +3,19 @@ import Header from "@/components/layouts/Header";
 import HeroSection from "@/components/home/HeroSection";
 import About from "@/components/home/About";
 import BestSeller from "@/components/home/BestSeller";
+import Essential, { sampleProducts } from "@/components/home/Essential";
 
 export default function Home() {
   return (
-  <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col">
       <Header />
-      
+
       <main className="flex-grow">
-    
-       <HeroSection />
-       <About />
-       <BestSeller />
-        
-      
+        <HeroSection />
+        <About />
+        <BestSeller />
+        <Essential products={sampleProducts} />
+
         {/* <Suspense fallback={<LoadingSpinner />}>
           <CategoryGrid />
         </Suspense>
@@ -34,7 +34,7 @@ export default function Home() {
        
         <Newsletter /> */}
       </main>
-      
+
       {/* <Footer /> */}
     </div>
   );
