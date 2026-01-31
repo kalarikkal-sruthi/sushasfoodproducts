@@ -4,56 +4,68 @@ import { ProductSection } from '@/types/product';
 export const dummyProductSections: ProductSection[] = [
   {
     id: 1,
-    title: 'Featured Products',
+    title: 'Essential',
     subtitle: 'Handpicked just for you',
     category: 'featured',
     products: [
       {
         id: 101,
-        name: 'Premium Wireless Headphones',
-        description: 'Noise-cancelling over-ear headphones with 30-hour battery life',
+        name: 'Essential Wood Pressed Coconut Oil',
+        description: 'Wood-pressed  for maximum purity, retains natural nutrients and aroma for healthier cooking and skincare.',
         price: 299.99,
         category: 'Electronics',
-        image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop',
+        image: '/assets/products/1.png',
         rating: 4.5,
         stock: 25,
-        discount: 15,
+        // discount: 15,
         featured: true
       },
       {
         id: 102,
-        name: 'Organic Cotton T-Shirt',
-        description: '100% organic cotton, comfortable and eco-friendly',
-        price: 34.99,
+        name: 'Essential Steel Pressed Coconut oil',
+        description: 'Pure, Steel-pressed coconut oil extracted through traditional steel pressing for maximum purity and natural goodness.',
+        price: 510.00,
         category: 'Fashion',
-        image: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h-400&fit=crop',
+        image: '/assets/products/2.png',
         rating: 4.2,
         stock: 50,
         featured: true
       },
       {
         id: 103,
-        name: 'Smart Watch Series 5',
-        description: 'Fitness tracking, heart rate monitor, and GPS',
-        price: 249.99,
+        name: 'Virigin Hot Processed Coconut Oil',
+        description: 'Virigin Hot Processed from fresh coconut meat, retaining natural aroma and nutrients. Ideal for cooking, hair care, and skin moisturizing.',
+        price: 300.00,
         category: 'Electronics',
-        image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=400&fit=crop',
+        image: '/assets/products/3.png',
         rating: 4.7,
         stock: 15,
-        discount: 20,
+        // discount: 20,
         featured: true
       },
       {
         id: 104,
-        name: 'Ceramic Coffee Mug Set',
+        name: 'Sesame oil',
         description: 'Set of 4 handcrafted ceramic mugs with modern design',
-        price: 45.99,
+        price: 400.00,
         category: 'Home & Kitchen',
-        image: 'https://images.unsplash.com/photo-1514228742587-6b1558fcf93a?w=400&h=400&fit=crop',
+        image: '/assets/products/5.png',
+        rating: 4.4,
+        stock: 40,
+        featured: true
+      },
+       {
+        id: 105,
+        name: 'Virigin Cold Processed Coconut Oil',
+        description: 'Set of 4 handcrafted ceramic mugs with modern design',
+        price: 425.00,
+        category: 'Home & Kitchen',
+        image: '/assets/products/5.png',
         rating: 4.4,
         stock: 40,
         featured: true
       }
+
     ]
   },
   {

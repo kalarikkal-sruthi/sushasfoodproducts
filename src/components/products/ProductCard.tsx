@@ -19,13 +19,13 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       )}
 
       {/* Featured Badge */}
-      {product.featured && (
+      {/* {product.featured && (
         <div className="absolute top-3 right-3 z-10">
           <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">
             Featured
           </span>
         </div>
-      )}
+      )} */}
 
       {/* Product Image */}
       <div className="aspect-square overflow-hidden bg-gray-100">
@@ -39,14 +39,14 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       {/* Product Details */}
       <div className="p-5">
         {/* Category */}
-        <div className="mb-2">
+        {/* <div className="mb-2">
           <span className="text-sm text-gray-500 font-medium">
             {product.category}
           </span>
-        </div>
+        </div> */}
 
         {/* Product Name */}
-        <h3 className="text-lg font-bold text-gray-900 mb-2 line-clamp-1">
+        <h3 className="text-lg font-bold text-gray-900 mb-2 ">
           {product.name}
         </h3>
 
@@ -56,7 +56,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         </p>
 
         {/* Rating */}
-        <div className="flex items-center mb-4">
+        {/* <div className="flex items-center mb-4">
           <div className="flex text-yellow-400">
             {[...Array(5)].map((_, i) => (
               <span key={i} className="text-lg">
@@ -67,12 +67,30 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           <span className="ml-2 text-sm text-gray-600">
             ({product.rating.toFixed(1)})
           </span>
-        </div>
+        </div> */}
 
         {/* Price and Stock */}
-        <div className="flex items-center justify-between">
+         <div className="flex items-center justify-between">
           <div>
-            {/* Price with discount */}
+            
+            {product.discount ? (
+              <div className="flex items-center gap-2">
+                <span className="text-2xl font-bold text-gray-900">
+                 ₹{(product.price * (1 - product.discount / 100)).toFixed(2)}
+                </span>
+                <span className="text-lg text-gray-400 line-through">
+                  ₹{product.price.toFixed(2)}
+                </span>
+              </div>
+            ) : (
+              <span className="text-2xl font-bold text-gray-900">
+                ₹{product.price.toFixed(2)}
+              </span>
+            )}
+          </div>
+        {/* <div className="flex items-center justify-between">
+          <div>
+            
             {product.discount ? (
               <div className="flex items-center gap-2">
                 <span className="text-2xl font-bold text-gray-900">
@@ -87,10 +105,10 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
                 ${product.price.toFixed(2)}
               </span>
             )}
-          </div>
+          </div> */}
 
           {/* Stock Status */}
-          <div className="text-right">
+          {/* <div className="text-right">
             <span
               className={`text-sm font-medium ${
                 product.stock > 10
@@ -106,7 +124,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
                 ? `Only ${product.stock} left`
                 : "Out of Stock"}
             </span>
-          </div>
+          </div> */}
         </div>
 
         {/* Action Buttons */}
@@ -114,9 +132,9 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           <button className="flex-1 bg-gray-900 text-white py-3 rounded-lg font-medium hover:bg-gray-800 transition-colors duration-200">
             Add to Cart
           </button>
-          <button className="px-4 py-3 border border-gray-300 rounded-lg font-medium hover:bg-gray-50 transition-colors duration-200">
+          {/* <button className="px-4 py-3 border border-gray-300 rounded-lg font-medium hover:bg-gray-50 transition-colors duration-200">
             ♡
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
