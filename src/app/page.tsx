@@ -2,9 +2,8 @@ import Image from "next/image";
 import Header from "@/components/layouts/Header";
 import HeroSection from "@/components/home/HeroSection";
 import About from "@/components/home/About";
-import BestSeller from "@/components/home/BestSeller";
-import Essential, { sampleProducts } from "@/components/home/Essential";
-import Essentialslider from "@/components/home/Essentialslider";
+import ProductSections from "@/components/products/ProductSections";
+
 
 export default function Home() {
   return (
@@ -13,10 +12,10 @@ export default function Home() {
 
       <main className="flex-grow">
         <HeroSection />
-        <About />
-        <BestSeller />
-        <Essential products={sampleProducts} />
-        <Essentialslider />
+        <ProductSections />
+        {/* <About /> */}
+       
+   
 
         {/* <Suspense fallback={<LoadingSpinner />}>
           <CategoryGrid />
